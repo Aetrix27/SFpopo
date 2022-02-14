@@ -1,3 +1,6 @@
+import { Outlet } from 'react-router-dom'
+
+import POPOSDetails from './POPOSDetails'
 import logo from './logo.svg';
 import './App.css';
 import Title from './Title';
@@ -9,6 +12,8 @@ function App() {
     <div className="App">
       
       <Title />
+      <Outlet />
+
       <POPOSList />
 
       <header className="App-header">
